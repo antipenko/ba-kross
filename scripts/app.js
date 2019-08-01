@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+    // menu
+
+    $('.menu-btn').on('click', function(e){
+        $('.ba-header-nav').toggleClass('open');
+    })
+
+
 
     // slider 
     $('.ba-slider').slick({
@@ -12,30 +19,33 @@ $(document).ready(function() {
         appendDots: '.slider-nav'
     });
 
+    new WOW().init();
+
 });
 
-// include google maps
-const googleMapsScript = document.createElement('script');
-	googleMapsScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBaSe6jdgxnsPBSc7pRB0_MlIoZSRm7aw8&callback=initMap';
-    document.head.appendChild(googleMapsScript);
+// ======== include google maps ======
+
+// const googleMapsScript = document.createElement('script');
+// 	googleMapsScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBaSe6jdgxnsPBSc7pRB0_MlIoZSRm7aw8&callback=initMap';
+//     document.head.appendChild(googleMapsScript);
     
 // init google map
-function initMap() {
+// function initMap() {
 
-    var markerBA = {lat: 50.006693, lng: 36.237199};
+//     var markerBA = {lat: 50.006693, lng: 36.237199};
 
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: markerBA,
-        zoom: 19
-    });
+//     map = new google.maps.Map(document.getElementById('map'), {
+//         center: markerBA,
+//         zoom: 19
+//     });
 
-    var marker = new google.maps.Marker({
-        position: baOffices[i].position,
-        title: 'ba-map title',
-        // icon: 'path/to/icon.png',
-        map: map
-      });
-}
+//     var marker = new google.maps.Marker({
+//         position: baOffices[i].position,
+//         title: 'ba-map title',
+//         // icon: 'path/to/icon.png',
+//         map: map
+//       });
+// }
 
 
 

@@ -1,0 +1,65 @@
+.hero{
+    background: {
+      image: url(../images/design/BG.jpg);
+      size: cover;
+      color: #41228e;
+    };
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+  
+  
+    &-wrapper{
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+    &__text{
+      color: #fff;
+      font-size: 3em;
+      font-weight: 600;
+    }
+  
+    &--social{
+      position: absolute;
+      
+    }
+  }
+  
+  .hero__decor{
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    &--dot-top{
+      height: 10px;
+      width: 129px;
+      left: 60%;
+      top: 25%;
+      background-image: url(../images/design/dot-top.png);
+    }
+    &--dot-bottom{
+      height: 63px;
+      width: 88px;
+      bottom: 10%;
+      left: 25%;
+      background-image: url(../images/design/dot-bottom.png);
+    }
+  
+    &--leaf-pink{
+      height: 15.5623vw;
+      width: 14.5623vw;
+      top: 10%;
+      left: 0;
+      background-image: url(../images/design/leaf-pink.png);
+    }
+    &--leaf-yellow{
+      height: 18.9375vw;
+      width: 11.125vw;
+      top: 27%;
+      right: 0;
+      background-image: url(../images/design/leaf-yellow.png);
+    }
+  }
+  
